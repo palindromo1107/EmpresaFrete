@@ -12,11 +12,13 @@ public class CadastroFrete {
     public double valorTotal() {
         double total = 0;
 
+        //POLIMORFISMO
         for (Frete frete : fretes) {
             total += frete.calcularFrete();
         }
 
         return total;
     }
+
 
 }
